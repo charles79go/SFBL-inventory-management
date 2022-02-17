@@ -64,4 +64,8 @@
         <name>Business_Settings</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Inventory</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
