@@ -10,6 +10,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Business Settings</label>
     <navType>Standard</navType>
+    <tabs>Walk_Through_Demo</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>

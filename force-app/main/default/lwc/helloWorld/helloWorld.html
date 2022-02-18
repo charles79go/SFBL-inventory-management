@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-card slds-var-p-around_small">
+        <h1>{printValue}</h1>
+        <p>{goal}</p>
+    </div>
+    
+    <lightning-card variant="Narrow" title="Conditional Rendering" icon-name="utility:home">
+
+        <!-- <lightning-input class="slds-p-around_small" type="checkbox" variant="standard" name="name" label="View Terms and conditions" onchange={handleChange}>
+        </lightning-input> -->
+
+        <lightning-button variant="brand-outline" label={buttonText} onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+        <div if:true={result} class="slds-p-around_small">
+            <p> Hello true {buttonText}</p>
+        </div>
+        
+
+    </lightning-card>
+
+</template>
