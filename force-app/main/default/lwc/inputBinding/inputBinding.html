@@ -1,0 +1,31 @@
+<template>
+    <lightning-card class="slds-m-bottom_small">
+        <div class="slds-p-around_small">
+            
+            <lightning-input variant="standard" name="name" type="text"
+                placeholder="Enter Name" label='Name' onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input variant="standard" name="email" type="text"
+                placeholder="Enter Email" label="Email" onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input variant="standard" name="password" type="password"
+                placeholder="Enter Password" label=Password onchange={handleChange}>
+            </lightning-input>
+        </div>
+        
+        <lightning-button class="slds-m-around_small"
+            variant="brand" label="Show Values" title="Submit" onclick={handleClick}></lightning-button>
+
+    </lightning-card>
+
+    <div class="slds-m-top_small">
+        <lightning-card if:true={result} >
+            <p class="slds-p-around_x-small">Your name is {name}</p>
+            <p class="slds-p-around_x-small">Your email is {email}</p>
+            <p class="slds-p-around_x-small">Your password is {password}</p>
+        </lightning-card>
+    </div>
+
+</template>

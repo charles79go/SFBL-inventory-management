@@ -1,0 +1,21 @@
+<template>
+    <lightning-card if:true={withData} title="Raw Materials">
+        <template for:each={rms} for:item="rm" class="slds-p-around_small">
+            <div key={rm.Id} class="slds-grid slds-gutters">
+                <div class="slds-col slds-p-around_x-small">
+                    <span>{rm.Name}</span>
+                </div>
+                <div class="slds-col slds-p-around_x-small">
+                    <span>{rm.Actual_Quantity__c}</span>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+
+    <lightning-card if:true={withError} >
+        <div class="slds-p-around_small">
+            <p>Error fetching data.</p>
+        </div>
+    </lightning-card>
+
+</template>
